@@ -1,0 +1,36 @@
+{
+  "name": "nobi-wcjs-player",
+  "description": "libvlc binding for node.js/io.js/NW.js/Electron",
+  "version": "1.0.0",
+  "license": "LGPL-2.1",
+  "author": "Sergey Radionov <rsatom@gmail.com>",
+  "keywords": [
+    "vlc",
+    "libvlc",
+    "video",
+    "player",
+    "wcjs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://git.bw-xt.com:8300/needs/nobi-wcjs-player"
+  },
+  "gypfile": true,
+  "main": "./lib/player",
+  "dependencies": {
+    "bindings": "~1.5.0",
+    "cmake-js": "^6.0.0",
+    "get-uv-event-loop-napi-h": "^1.0.5",
+    "node-addon-api": "^1.7.1",
+    "node-addon-api-helpers": "^0.11.0"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^1.8.8",
+    "gc-profiler": "^1.4.1",
+    "node-gyp": "^6.0.1",
+    "node-pre-gyp": "^0.14.0"
+  },
+  "scripts": {
+    "install-old": "node rebuild.js"
+  }
+}
